@@ -1,4 +1,4 @@
-# FEUP MNUM
+# FEUP BDAD
 
 This repository contains the project completed in Bases de Dados, a **2nd year course** in the **Integrated Master's Degree in Informatics and Computing Engineering** @ **FEUP**
 
