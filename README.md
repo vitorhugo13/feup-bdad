@@ -4,9 +4,20 @@ This repository contains the project completed in Bases de Dados, a **2nd year c
 
 ## Documents
 
- * [Report](https://docs.google.com/document/d/12QI6yeYAEGx6i6vKfMbxFk_6U1X3NBmMS3kUi2Q_L10/edit)
- * [UML Diagram](https://www.lucidchart.com/documents/edit/55d226e3-ad5f-43d5-a541-d06471c47275/0?shared=true&)
- * [Old UML Diagram](https://www.lucidchart.com/documents/edit/b1926192-92df-43f3-aa79-a8760bd7e2a3?shared=true&#)
+### First Delivery
+
+ * [First Report](https://docs.google.com/document/d/12QI6yeYAEGx6i6vKfMbxFk_6U1X3NBmMS3kUi2Q_L10/edit)
+ * [First UML Diagram](https://www.lucidchart.com/documents/edit/b1926192-92df-43f3-aa79-a8760bd7e2a3?shared=true&#)
+
+### Second Delivery
+
+ * [Second Report]()
+ * [Second UML Diagram]()
+
+### Third Delivery
+
+ * [Third Report]()
+ * [Third UML Diagram]()
 
 ## Course Information
 
