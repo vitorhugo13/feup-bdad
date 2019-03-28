@@ -6,13 +6,13 @@ This repository contains the project completed in Bases de Dados, a **2nd year c
 
 ### First Delivery
 
- * [First Report](https://docs.google.com/document/d/12QI6yeYAEGx6i6vKfMbxFk_6U1X3NBmMS3kUi2Q_L10/edit)
- * [First UML Diagram](https://www.lucidchart.com/documents/edit/b1926192-92df-43f3-aa79-a8760bd7e2a3?shared=true&#)
+ * [First Report](https://github.com/Marantesss/feup-bdad/blob/master/primeira_entrega/Report_BDAD_2MIEIC03_04.pdf)
+ * [First UML Diagram](https://github.com/Marantesss/feup-bdad/blob/master/primeira_entrega/Class-Diagram-Hotel-Website.png)
 
 ### Second Delivery
 
- * [Second Report]()
- * [Second UML Diagram]()
+ * [Second Report](https://docs.google.com/document/d/12QI6yeYAEGx6i6vKfMbxFk_6U1X3NBmMS3kUi2Q_L10/edit)
+ * [Second UML Diagram](https://www.lucidchart.com/documents/edit/b1926192-92df-43f3-aa79-a8760bd7e2a3?shared=true&#)
 
 ### Third Delivery
 
