@@ -20,8 +20,8 @@ DROP TABLE IF EXISTS Reservation;
 CREATE TABLE Reservation (
     reservationID   BIGINT  PRIMARY KEY,
     creationDate    DATE    NOT NULL ON CONFLICT ABORT,
-    finalPrice      REAL    NOT NULL ON CONFLICT ABORT CHECK (finalPrice >= 0) DEFAULT(0), --Trigger para efetuar o cálculo do preço
-    /*isPaid        DERIVED,*/
+    finalPrice      REAL    NOT NULL ON CONFLICT ABORT CHECK (finalPrice >= 0) DEFAULT(0), --DERIVED -> Trigger para efetuar o cálculo do preço
+    isPaid          BOOLEAN DEFAULT FALSE,
     client          BIGINT  REFERENCES Client ON DELETE SET NULL,
     complement      INT  REFERENCES Complement ON DELETE SET NULL
 );
@@ -32,7 +32,7 @@ DROP TABLE IF EXISTS Cancelling;
 CREATE TABLE Cancelling (
     reservation     BIGINT  PRIMARY KEY REFERENCES Reservation,
     client          BIGINT  REFERENCES  Client,
-    cancelDate      DATE    NOT NULL ON CONFLICT ABORT,  CHECK (date <= (select startDate FROM Stay))
+    cancelDate      DATE    NOT NULL ON CONFLICT ABORT,  --CHECK (date <= (select startDate from Stay)) -> TRIGGER
     cost            REAL    NOT NULL ON CONFLICT ABORT
 );
 
@@ -41,7 +41,7 @@ DROP TABLE IF EXISTS Complement;
 
 CREATE TABLE Complement (
     complementID    INT  PRIMARY KEY,
-    type            TEXT,   --Que restrições necessita?
+    type            TEXT,   UNIQUE,
     extraCost       REAL    NOT NULL ON CONFLICT ABORT CHECK (extraCost >= 0) DEFAULT(0)
 );
 
@@ -61,7 +61,7 @@ DROP TABLE IF EXISTS Guest;
 
 CREATE TABLE Guest (
     reservation     BIGINT  PRIMARY KEY REFERENCES Reservation,
-    name            Text    --Que restrições necessita?
+    name            TEXT    NOT NULL ON CONFLICT ABORT
 );
 
 -- Comment
@@ -127,7 +127,13 @@ CREATE TABLE Photo (
     description TEXT    NOT NULL ON CONFLICT ABORT,
     meetingRoom INT     REFERENCES  MeetingRoom,
     bedroom     INT     REFERENCES  Bedroom,
-    client      BIGINT  REFERENCES  Client   
+    client      BIGINT  REFERENCES  Client,   
+
+    CHECK(meetingRoom=NULL AND bedroom=NULL AND Client<>NULL
+        OR
+        meetingRoom=NULL AND bedroom<>NULL AND Client=NULL
+        OR
+        meetingRoom<>NULL AND bedroom=NULL AND Client=NULL)
 );
 
 -- Feature
