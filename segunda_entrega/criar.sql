@@ -125,6 +125,7 @@ CREATE TABLE Photo (
     photoID     BIGINT  PRIMARY KEY,
     date        DATE    NOT NULL ON CONFLICT ABORT,
     description TEXT    NOT NULL ON CONFLICT ABORT,
+    photoPath   TEXT    NOT NULL ON CONFLICT ABORT,
     meetingRoom INT     REFERENCES  MeetingRoom,
     bedroom     INT     REFERENCES  Bedroom,
     client      BIGINT  REFERENCES  Client,   
