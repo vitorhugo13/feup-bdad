@@ -11,8 +11,7 @@ CREATE TABLE Client (
     email       TEXT    UNIQUE,
     phoneNumber TEXT    UNIQUE,
     password    TEXT    NOT NULL ON CONFLICT ABORT,    
-    taxNumber   INT     UNIQUE,     
-    photo       BLOB    REFERENCES Photo ON DELETE SET NULL ON UPDATE CASCADE
+    taxNumber   INT     UNIQUE
 );
 
 -- Reservation
@@ -20,14 +19,11 @@ DROP TABLE IF EXISTS Reservation;
 
 CREATE TABLE Reservation (
     reservationID   BIGINT  PRIMARY KEY,
-    reservationDate DATE    NOT NULL ON CONFLICT ABORT,
     creationDate    DATE    NOT NULL ON CONFLICT ABORT,
     finalPrice      REAL    NOT NULL ON CONFLICT ABORT CHECK (finalPrice >= 0) DEFAULT(0), --Trigger para efetuar o cálculo do preço
     /*isPaid        DERIVED,*/
     client          BIGINT  REFERENCES Client ON DELETE SET NULL,
-    complement      INT  REFERENCES Complement ON DELETE SET NULL,
-
-    CHECK (reservationDate >= creationDate)
+    complement      INT  REFERENCES Complement ON DELETE SET NULL
 );
 
 -- Cancelling
@@ -36,7 +32,7 @@ DROP TABLE IF EXISTS Cancelling;
 CREATE TABLE Cancelling (
     reservation     BIGINT  PRIMARY KEY REFERENCES Reservation,
     client          BIGINT  REFERENCES  Client,
-    date            DATE    NOT NULL ON CONFLICT ABORT,  --CHECK (date <= (select reservationDate FROM Reservation))
+    cancelDate      DATE    NOT NULL ON CONFLICT ABORT,  --CHECK (date <= (select reservationDate FROM Reservation))
     cost            REAL    NOT NULL ON CONFLICT ABORT
 );
 
