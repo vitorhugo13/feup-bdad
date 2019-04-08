@@ -25,6 +25,22 @@ insert into Client (clientID, firstName, lastName, email, phoneNumber, password,
 -- Cancelling
 
 -- Reservation
+insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (1, '2018-03-12', '€3966,61', false, 8, 4);
+insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (2, '2018-05-06', '€1478,51', false, 2, 4);
+insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (3, '2018-11-03', '€2484,23', false, 4, 4);
+insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (4, '2018-11-01', '€4753,09', false, 3, 1);
+insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (5, '2019-01-26', '€2899,02', false, 5, 4);
+insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (6, '2018-08-05', '€207,83', true, 6, 1);
+insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (7, '2018-11-24', '€436,95', true, 7, 1);
+insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (8, '2018-06-06', '€4126,18', false, 1, 3);
+insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (9, '2018-03-21', '€2724,09', false, 9, 2);
+insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (10,'2018-03-22', '€985,20', true, 10, 2);
+insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (11,'2018-09-24', '€710,91', false, 11, 3);
+insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (12,'2018-12-21', '€807,43', false, 12, 3);
+insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (13,'2019-01-13', '€4122,03', true, 13, 4);
+insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (14,'2018-06-29', '€306,08', false, 20, 1);
+insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (15,'2019-02-18', '€1405,67', true, 15, 3);
+insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (16,'2018-12-08', '€2928,73', true, 19, 2);
 
 -- Complement
 

@@ -32,7 +32,7 @@ DROP TABLE IF EXISTS Cancelling;
 CREATE TABLE Cancelling (
     reservation     BIGINT  PRIMARY KEY REFERENCES Reservation,
     client          BIGINT  REFERENCES  Client,
-    cancelDate      DATE    NOT NULL ON CONFLICT ABORT,  --CHECK (date <= (select reservationDate FROM Reservation))
+    cancelDate      DATE    NOT NULL ON CONFLICT ABORT,  CHECK (date <= (select reservationDate FROM Reservation))
     cost            REAL    NOT NULL ON CONFLICT ABORT
 );
 
