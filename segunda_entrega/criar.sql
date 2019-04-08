@@ -41,7 +41,7 @@ DROP TABLE IF EXISTS Complement;
 
 CREATE TABLE Complement (
     complementID    INT  PRIMARY KEY,
-    type            TEXT,   UNIQUE,
+    type            TEXT   UNIQUE,
     extraCost       REAL    NOT NULL ON CONFLICT ABORT CHECK (extraCost >= 0) DEFAULT(0)
 );
 
