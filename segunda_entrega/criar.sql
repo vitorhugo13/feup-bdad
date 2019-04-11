@@ -82,7 +82,7 @@ CREATE TABLE Comment (
 DROP TABLE IF EXISTS Room;
 
 CREATE TABLE Room (
-    roomNumber  TEXT PRIMARY KEY,
+    roomNumber  TEXT        PRIMARY KEY,
     capacity    INT         NOT NULL ON CONFLICT ABORT,
     price       REAL        NOT NULL ON CONFLICT ABORT
 );

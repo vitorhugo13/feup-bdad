@@ -79,6 +79,48 @@ insert into Stay (reservation, startDate, endDate) values (16, '2018-12-14', '20
 -- Comment
 
 -- Room
+insert into Room (roomNumber, capacity, price) ('001', 50, '230.0');
+insert into Room (roomNumber, capacity, price) ('002', 25, '150.0');
+insert into Room (roomNumber, capacity, price) ('003', 25, '150.0');
+insert into Room (roomNumber, capacity, price) ('004', 10, '110.0');
+insert into Room (roomNumber, capacity, price) ('005', 10, '110.0');
+insert into Room (roomNumber, capacity, price) ('101', 5, '100.0');
+insert into Room (roomNumber, capacity, price) ('102', 5, '100.0');
+insert into Room (roomNumber, capacity, price) ('103', 5, '100.0');
+insert into Room (roomNumber, capacity, price) ('104', 5, '100.0');
+insert into Room (roomNumber, capacity, price) ('105', 5, '100.0');
+insert into Room (roomNumber, capacity, price) ('106', 4, '80.0');
+insert into Room (roomNumber, capacity, price) ('107', 4, '80.0');
+insert into Room (roomNumber, capacity, price) ('108', 4, '80.0');
+insert into Room (roomNumber, capacity, price) ('109', 4, '80.0');
+insert into Room (roomNumber, capacity, price) ('110', 4, '80.0');
+insert into Room (roomNumber, capacity, price) ('111', 3, '60.0');
+insert into Room (roomNumber, capacity, price) ('112', 3, '60.0');
+insert into Room (roomNumber, capacity, price) ('113', 3, '60.0');
+insert into Room (roomNumber, capacity, price) ('114', 3, '60.0');
+insert into Room (roomNumber, capacity, price) ('115', 3, '60.0');
+insert into Room (roomNumber, capacity, price) ('201', 1, '30.0');
+insert into Room (roomNumber, capacity, price) ('202', 1, '30.0');
+insert into Room (roomNumber, capacity, price) ('203', 1, '30.0');
+insert into Room (roomNumber, capacity, price) ('204', 1, '30.0');
+insert into Room (roomNumber, capacity, price) ('205', 1, '30.0');
+insert into Room (roomNumber, capacity, price) ('206', 2, '50.0');
+insert into Room (roomNumber, capacity, price) ('207', 2, '50.0');
+insert into Room (roomNumber, capacity, price) ('208', 2, '50.0');
+insert into Room (roomNumber, capacity, price) ('209', 2, '50.0');
+insert into Room (roomNumber, capacity, price) ('210', 2, '50.0');
+insert into Room (roomNumber, capacity, price) ('211', 2, '70.0');
+insert into Room (roomNumber, capacity, price) ('212', 2, '70.0');
+insert into Room (roomNumber, capacity, price) ('213', 2, '70.0');
+insert into Room (roomNumber, capacity, price) ('214', 2, '70.0');
+insert into Room (roomNumber, capacity, price) ('215', 2, '70.0');
+insert into Room (roomNumber, capacity, price) ('301', 2, '100.0');
+insert into Room (roomNumber, capacity, price) ('302', 2, '100.0');
+insert into Room (roomNumber, capacity, price) ('303', 2, '100.0');
+insert into Room (roomNumber, capacity, price) ('304', 2, '120.0');
+insert into Room (roomNumber, capacity, price) ('305', 2, '120.0');
+insert into Room (roomNumber, capacity, price) ('306', 2, '120.0');
+insert into Room (roomNumber, capacity, price) ('306', 2, '150.0');
 
 -- MeetingRoom
 
@@ -107,4 +149,3 @@ insert into Photo (photoID, date, description, photoPath, meetingRoom, bedroom, 
 insert into Photo (photoID, date, description, photoPath, meetingRoom, bedroom, client) values (8, '2018-11-19', 'Audio meeting room', 'augue_vestibulum_ante.gif', 8, NULL, NULL);
 insert into Photo (photoID, date, description, photoPath, meetingRoom, bedroom, client) values (9, '2018-09-01', 'Audio&video meeting room', 'libero_rutrum_ac.gif', 9, NULL, NULL);
 insert into Photo (photoID, date, description, photoPath, meetingRoom, bedroom, client) values (10, '2018-11-25', 'Client w/id 10 photo', 'ipsum_dolor_sit.tiff', NULL, NULL, 10);
-
