@@ -60,8 +60,10 @@ CREATE TABLE Stay (
 DROP TABLE IF EXISTS Guest;
 
 CREATE TABLE Guest (
-    reservation     BIGINT  PRIMARY KEY REFERENCES Reservation,
-    name            TEXT    NOT NULL ON CONFLICT ABORT
+    reservation     BIGINT  REFERENCES Reservation,
+    name            TEXT    NOT NULL ON CONFLICT ABORT,
+
+    PRIMARY KEY (reservation, name);
 );
 
 -- Comment

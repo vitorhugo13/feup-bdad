@@ -22,11 +22,14 @@ insert into Client (clientID, firstName, lastName, email, phoneNumber, password,
 insert into Client (clientID, firstName, lastName, email, phoneNumber, password, taxNumber) values (19, 'Gerry', 'Briars', 'gbriarsi@123-reg.co.uk', '+234 553 820 5989', 'HnVMMf3hR', '852-30-7468');
 insert into Client (clientID, firstName, lastName, email, phoneNumber, password, taxNumber) values (20, 'Fairlie', 'Pellingar', 'fpellingarj@1688.com', '+62 834 571 3993', 'RhQmda7YeCOI', '634-02-9324');
 
+<<<<<<< Updated upstream
 -- Cancelling
 insert into Cancelling (reservation, client, cancelDate, cost) values (4, 3, '2018-12-24', '€23,56');
 insert into Cancelling (reservation, client, cancelDate, cost) values (9, 9, '2018-03-27', '€63,59');
 insert into Cancelling (reservation, client, cancelDate, cost) values (14, 20 , '2018-07-29', '€13,99');
 
+=======
+>>>>>>> Stashed changes
 -- Reservation
 insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (1, '2018-03-12', '€3966,61', 0, 8, 4);
 insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (2, '2018-05-06', '€1478,51', 0, 2, 4);
@@ -44,6 +47,11 @@ insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client
 insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (14,'2018-06-29', '€306,08', 0, 20, 1);
 insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (15,'2019-02-18', '€1405,67', 1, 15, 3);
 insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (16,'2018-12-08', '€2928,73', 1, 19, 2);
+
+-- Cancelling
+insert into Cancelling (reservation, client, cancelDate, cost) values (4, 3, '2018-12-24', '€23,56');
+insert into Cancelling (reservation, client, cancelDate, cost) values (9, 9, '2018-03-27', '€63,59');
+insert into Cancelling (reservation, client, cancelDate, cost) values (14, 20 , '2018-07-29', '€13,99');
 
 -- Complement
 insert into Complement (complementID, type, extraCost) values (4,'All included', '€150,00' );
