@@ -88,6 +88,8 @@ insert into Feature (featureID,featureName) values (3,'Fridge');
 insert into Feature (featureID,featureName) values (4,'Balcony');
 insert into Feature (featureID,featureName) values (5,'Jacuzzi');
 insert into Feature (featureID,featureName) values (6,'Telephone');
+insert into Feature (featureID,featureName) values (7,'Audio');
+insert into Feature (featureID,featureName) values (8,'Fast wi-fi');
 
 -- Photo
 insert into Photo (photoID, date, description, photoPath, meetingRoom, bedroom, client) values (1, '2018-05-11', 'Presidential suite view', 'luctus.jpeg', NULL, 1, NULL);
