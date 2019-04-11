@@ -82,6 +82,12 @@ insert into Stay (reservation, startDate, endDate) values (16, '2018-12-14', '20
 -- BedroomType
 
 -- Feature
+insert into Feature (featureID,featureName) values (1,'TV');
+insert into Feature (featureID,featureName) values (2,'Air conditioning');
+insert into Feature (featureID,featureName) values (3,'Fridge');
+insert into Feature (featureID,featureName) values (4,'Balcony');
+insert into Feature (featureID,featureName) values (5,'Jacuzzi');
+insert into Feature (featureID,featureName) values (6,'Telephone');
 
 -- Photo
 insert into Photo (photoID, date, description, photoPath, meetingRoom, bedroom, client) values (1, '2018-05-11', 'Presidential suite view', 'luctus.jpeg', NULL, 1, NULL);
