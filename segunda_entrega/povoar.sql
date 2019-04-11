@@ -79,64 +79,81 @@ insert into Stay (reservation, startDate, endDate) values (16, '2018-12-14', '20
 -- Comment
 
 -- Room
-insert into Room (roomNumber, capacity, price) ('001', 50, '230.0');
-insert into Room (roomNumber, capacity, price) ('002', 25, '150.0');
-insert into Room (roomNumber, capacity, price) ('003', 25, '150.0');
-insert into Room (roomNumber, capacity, price) ('004', 10, '110.0');
-insert into Room (roomNumber, capacity, price) ('005', 10, '110.0');
-insert into Room (roomNumber, capacity, price) ('101', 5, '100.0');
-insert into Room (roomNumber, capacity, price) ('102', 5, '100.0');
-insert into Room (roomNumber, capacity, price) ('103', 5, '100.0');
-insert into Room (roomNumber, capacity, price) ('104', 5, '100.0');
-insert into Room (roomNumber, capacity, price) ('105', 5, '100.0');
-insert into Room (roomNumber, capacity, price) ('106', 4, '80.0');
-insert into Room (roomNumber, capacity, price) ('107', 4, '80.0');
-insert into Room (roomNumber, capacity, price) ('108', 4, '80.0');
-insert into Room (roomNumber, capacity, price) ('109', 4, '80.0');
-insert into Room (roomNumber, capacity, price) ('110', 4, '80.0');
-insert into Room (roomNumber, capacity, price) ('111', 3, '60.0');
-insert into Room (roomNumber, capacity, price) ('112', 3, '60.0');
-insert into Room (roomNumber, capacity, price) ('113', 3, '60.0');
-insert into Room (roomNumber, capacity, price) ('114', 3, '60.0');
-insert into Room (roomNumber, capacity, price) ('115', 3, '60.0');
-insert into Room (roomNumber, capacity, price) ('201', 1, '30.0');
-insert into Room (roomNumber, capacity, price) ('202', 1, '30.0');
-insert into Room (roomNumber, capacity, price) ('203', 1, '30.0');
-insert into Room (roomNumber, capacity, price) ('204', 1, '30.0');
-insert into Room (roomNumber, capacity, price) ('205', 1, '30.0');
-insert into Room (roomNumber, capacity, price) ('206', 2, '50.0');
-insert into Room (roomNumber, capacity, price) ('207', 2, '50.0');
-insert into Room (roomNumber, capacity, price) ('208', 2, '50.0');
-insert into Room (roomNumber, capacity, price) ('209', 2, '50.0');
-insert into Room (roomNumber, capacity, price) ('210', 2, '50.0');
-insert into Room (roomNumber, capacity, price) ('211', 2, '70.0');
-insert into Room (roomNumber, capacity, price) ('212', 2, '70.0');
-insert into Room (roomNumber, capacity, price) ('213', 2, '70.0');
-insert into Room (roomNumber, capacity, price) ('214', 2, '70.0');
-insert into Room (roomNumber, capacity, price) ('215', 2, '70.0');
-insert into Room (roomNumber, capacity, price) ('301', 2, '100.0');
-insert into Room (roomNumber, capacity, price) ('302', 2, '100.0');
-insert into Room (roomNumber, capacity, price) ('303', 2, '100.0');
-insert into Room (roomNumber, capacity, price) ('304', 2, '120.0');
-insert into Room (roomNumber, capacity, price) ('305', 2, '120.0');
-insert into Room (roomNumber, capacity, price) ('306', 2, '120.0');
-insert into Room (roomNumber, capacity, price) ('306', 2, '150.0');
+insert into Room (roomNumber, capacity, price) values ('001', 50, '230.0');
+insert into Room (roomNumber, capacity, price) values ('002', 25, '150.0');
+insert into Room (roomNumber, capacity, price) values ('003', 25, '150.0');
+insert into Room (roomNumber, capacity, price) values ('004', 10, '110.0');
+insert into Room (roomNumber, capacity, price) values ('005', 10, '110.0');
+insert into Room (roomNumber, capacity, price) values ('101', 5, '100.0');
+insert into Room (roomNumber, capacity, price) values ('102', 5, '100.0');
+insert into Room (roomNumber, capacity, price) values ('103', 5, '100.0');
+insert into Room (roomNumber, capacity, price) values ('104', 5, '100.0');
+insert into Room (roomNumber, capacity, price) values ('105', 5, '100.0');
+insert into Room (roomNumber, capacity, price) values ('106', 4, '80.0');
+insert into Room (roomNumber, capacity, price) values ('107', 4, '80.0');
+insert into Room (roomNumber, capacity, price) values ('108', 4, '80.0');
+insert into Room (roomNumber, capacity, price) values ('109', 4, '80.0');
+insert into Room (roomNumber, capacity, price) values ('110', 4, '80.0');
+insert into Room (roomNumber, capacity, price) values ('111', 3, '60.0');
+insert into Room (roomNumber, capacity, price) values ('112', 3, '60.0');
+insert into Room (roomNumber, capacity, price) values ('113', 3, '60.0');
+insert into Room (roomNumber, capacity, price) values ('114', 3, '60.0');
+insert into Room (roomNumber, capacity, price) values ('115', 3, '60.0');
+insert into Room (roomNumber, capacity, price) values ('201', 1, '30.0');
+insert into Room (roomNumber, capacity, price) values ('202', 1, '30.0');
+insert into Room (roomNumber, capacity, price) values ('203', 1, '30.0');
+insert into Room (roomNumber, capacity, price) values ('204', 1, '30.0');
+insert into Room (roomNumber, capacity, price) values ('205', 1, '30.0');
+insert into Room (roomNumber, capacity, price) values ('206', 2, '50.0');
+insert into Room (roomNumber, capacity, price) values ('207', 2, '50.0');
+insert into Room (roomNumber, capacity, price) values ('208', 2, '50.0');
+insert into Room (roomNumber, capacity, price) values ('209', 2, '50.0');
+insert into Room (roomNumber, capacity, price) values ('210', 2, '50.0');
+insert into Room (roomNumber, capacity, price) values ('211', 2, '70.0');
+insert into Room (roomNumber, capacity, price) values ('212', 2, '70.0');
+insert into Room (roomNumber, capacity, price) values ('213', 2, '70.0');
+insert into Room (roomNumber, capacity, price) values ('214', 2, '70.0');
+insert into Room (roomNumber, capacity, price) values ('215', 2, '70.0');
+insert into Room (roomNumber, capacity, price) values ('301', 2, '100.0');
+insert into Room (roomNumber, capacity, price) values ('302', 2, '100.0');
+insert into Room (roomNumber, capacity, price) values ('303', 2, '100.0');
+insert into Room (roomNumber, capacity, price) values ('304', 2, '120.0');
+insert into Room (roomNumber, capacity, price) values ('305', 2, '120.0');
+insert into Room (roomNumber, capacity, price) values ('306', 2, '120.0');
+insert into Room (roomNumber, capacity, price) values ('401', 2, '150.0');
 
 -- MeetingRoom
+insert into MeetingRoom (roomNumber, description) values ('001', 'Big MeetingRoom');
+insert into MeetingRoom (roomNumber, description) values ('002', 'Medium MeetingRoom 1');
+insert into MeetingRoom (roomNumber, description) values ('003', 'Medium MeetingRoom 2');
+insert into MeetingRoom (roomNumber, description) values ('004', 'Small MeetingRoom 1');
+insert into MeetingRoom (roomNumber, description) values ('005', 'Small MeetingRoom 2');
 
 -- Bedroom
+insert into MeetingRoom (roomNumber, description) values ('005', '');
 
 -- BedroomType
+insert into BedroomType (typename, description) values ('Familiar Big', 'Familiar Bedroom for 5');
+insert into BedroomType (typename, description) values ('Familiar', 'Familiar Bedroom for 4');
+insert into BedroomType (typename, description) values ('Triple', 'Triple Bedroom');
+insert into BedroomType (typename, description) values ('Single', 'Single Bedroom');
+insert into BedroomType (typename, description) values ('Double', 'Double Bedroom');
+insert into BedroomType (typename, description) values ('Double Deluxe', 'Double Bedroom with --- '); --(add extras)
+insert into BedroomType (typename, description) values ('Basic Suite', 'A simple suite'); --(add extras)
+insert into BedroomType (typename, description) values ('Master Suite', 'A suite with --- '); --(add extras)
+insert into BedroomType (typename, description) values ('Artist Suite', 'A suite with --- '); --(add extras)
+insert into BedroomType (typename, description) values ('Presidential Suite', 'The best suite of the town'); --(add extras)
 
 -- Feature
 insert into Feature (featureID,featureName) values (1,'TV');
 insert into Feature (featureID,featureName) values (2,'Air conditioning');
 insert into Feature (featureID,featureName) values (3,'Fridge');
-insert into Feature (featureID,featureName) values (4,'Balcony');
+insert into Feature (featureID,featureName) values (4,'Balcony');s
 insert into Feature (featureID,featureName) values (5,'Jacuzzi');
 insert into Feature (featureID,featureName) values (6,'Telephone');
 insert into Feature (featureID,featureName) values (7,'Audio');
-insert into Feature (featureID,featureName) values (8,'Fast wi-fi');
+insert into Feature (featureID,featureName) values (8,'King Size Bed');
+insert into Feature (featureID,featureName) values (9,'Private Pool');
 
 -- Photo
 insert into Photo (photoID, date, description, photoPath, meetingRoom, bedroom, client) values (1, '2018-05-11', 'Presidential suite view', 'luctus.jpeg', NULL, 1, NULL);
@@ -149,3 +166,7 @@ insert into Photo (photoID, date, description, photoPath, meetingRoom, bedroom, 
 insert into Photo (photoID, date, description, photoPath, meetingRoom, bedroom, client) values (8, '2018-11-19', 'Audio meeting room', 'augue_vestibulum_ante.gif', 8, NULL, NULL);
 insert into Photo (photoID, date, description, photoPath, meetingRoom, bedroom, client) values (9, '2018-09-01', 'Audio&video meeting room', 'libero_rutrum_ac.gif', 9, NULL, NULL);
 insert into Photo (photoID, date, description, photoPath, meetingRoom, bedroom, client) values (10, '2018-11-25', 'Client w/id 10 photo', 'ipsum_dolor_sit.tiff', NULL, NULL, 10);
+
+--MeetingRoomFeature
+
+--BedRoomTypeFeature
