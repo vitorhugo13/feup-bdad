@@ -65,13 +65,13 @@ insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client
 
 -- Photo
 insert into Photo (photoID, date, description, photoPath, meetingRoom, bedroom, client) values (1, '2018-05-11', 'Presidential suite view', 'luctus.jpeg', NULL, 1, NULL);
-insert into Photo (photoID, date, description, photoPath, meetingRoom, bedroom, client) values (2, '2018-12-26', 'Presidential suite bed', 'vel.gif', NULL, NULL, 1);
-insert into Photo (photoID, date, description, photoPath, meetingRoom, bedroom, client) values (3, '2018-06-13', 'President suite bathroom', 'rhoncus_aliquet_pulvinar.tiff', NULL, 2, NULL);
-insert into Photo (photoID, date, description, photoPath, meetingRoom, bedroom, client) values (4, '2018-08-09', 'Executive room', 'rutrum_at.jpeg', NULL, NULL, 2);
-insert into Photo (photoID, date, description, photoPath, meetingRoom, bedroom, client) values (5, '2018-11-09', 'Restaurant', 'lacinia_eget.png', 5, NULL, NULL);
-insert into Photo (photoID, date, description, photoPath, meetingRoom, bedroom, client) values (6, '2018-12-03', 'Swimming pool', 'ut_nunc_vestibulum.tiff', NULL, NULL, 6);
-insert into Photo (photoID, date, description, photoPath, meetingRoom, bedroom, client) values (7, '2018-07-02', 'Reception', 'sit_amet_sapien.tiff', NULL, 7, NULL);
-insert into Photo (photoID, date, description, photoPath, meetingRoom, bedroom, client) values (8, '2018-11-19', 'Singleroom view', 'augue_vestibulum_ante.gif', 8, NULL, NULL);
-insert into Photo (photoID, date, description, photoPath, meetingRoom, bedroom, client) values (9, '2018-09-01', 'Doubleroom bathroom', 'libero_rutrum_ac.gif', 9, NULL, NULL);
-insert into Photo (photoID, date, description, photoPath, meetingRoom, bedroom, client) values (10, '2018-11-25', 'Hotel entrance', 'ipsum_dolor_sit.tiff', NULL, NULL, 10);
+insert into Photo (photoID, date, description, photoPath, meetingRoom, bedroom, client) values (2, '2018-12-26', 'Client w/id 1 photo', 'vel.gif', NULL, NULL, 1);
+insert into Photo (photoID, date, description, photoPath, meetingRoom, bedroom, client) values (3, '2018-06-13', 'Executive suite bathroom', 'rhoncus_aliquet_pulvinar.tiff', NULL, 2, NULL);
+insert into Photo (photoID, date, description, photoPath, meetingRoom, bedroom, client) values (4, '2018-08-09', 'Client w/id 2 photo', 'rutrum_at.jpeg', NULL, NULL, 2);
+insert into Photo (photoID, date, description, photoPath, meetingRoom, bedroom, client) values (5, '2018-11-09', 'Meeting room view', 'lacinia_eget.png', 5, NULL, NULL);
+insert into Photo (photoID, date, description, photoPath, meetingRoom, bedroom, client) values (6, '2018-12-03', 'Client w/id 6 photo', 'ut_nunc_vestibulum.tiff', NULL, NULL, 6);
+insert into Photo (photoID, date, description, photoPath, meetingRoom, bedroom, client) values (7, '2018-07-02', 'Singleroom bed', 'sit_amet_sapien.tiff', NULL, 7, NULL);
+insert into Photo (photoID, date, description, photoPath, meetingRoom, bedroom, client) values (8, '2018-11-19', 'Audio meeting room', 'augue_vestibulum_ante.gif', 8, NULL, NULL);
+insert into Photo (photoID, date, description, photoPath, meetingRoom, bedroom, client) values (9, '2018-09-01', 'Audio&video meeting room', 'libero_rutrum_ac.gif', 9, NULL, NULL);
+insert into Photo (photoID, date, description, photoPath, meetingRoom, bedroom, client) values (10, '2018-11-25', 'Client w/id 10 photo', 'ipsum_dolor_sit.tiff', NULL, NULL, 10);
 
