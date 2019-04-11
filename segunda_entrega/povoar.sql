@@ -50,7 +50,24 @@ insert into Complement (complementID, type, extraCost) values (4,'All included',
 insert into Complement (complementID, type, extraCost) values (3,'Full board', '€105,00' );
 insert into Complement (complementID, type, extraCost) values (2,'Half board', '€55,00' );
 insert into Complement (complementID, type, extraCost) values (1,'Only accomodation', '€0,00' );
+
 -- Stay
+insert into Stay (reservation, startDate, endDate) values (1, '2018-08-27', '2018-09-05');
+insert into Stay (reservation, startDate, endDate) values (2, '2018-06-06', '2019-06-13');
+insert into Stay (reservation, startDate, endDate) values (3, '2018-12-25', '2019-01-03');
+insert into Stay (reservation, startDate, endDate) values (4, '2019-02-24', '2019-03-04');
+insert into Stay (reservation, startDate, endDate) values (5, '2019-04-04', '2019-04-15');
+insert into Stay (reservation, startDate, endDate) values (6, '2018-09-04', '2018-09-20');
+insert into Stay (reservation, startDate, endDate) values (7, '2018-12-19', '2019-02-02');
+insert into Stay (reservation, startDate, endDate) values (8, '2018-06-19', '2018-07-02');
+insert into Stay (reservation, startDate, endDate) values (9, '2018-04-07', '2018-04-19');
+insert into Stay (reservation, startDate, endDate) values (10, '2019-03-23', '2018-04-13');
+insert into Stay (reservation, startDate, endDate) values (11, '2018-10-05', '2018-10-15');
+insert into Stay (reservation, startDate, endDate) values (12, '2019-02-22', '2019-02-28');
+insert into Stay (reservation, startDate, endDate) values (13, '2019-04-07', '2019-04-18');
+insert into Stay (reservation, startDate, endDate) values (14, '2018-07-17', '2018-07-28');
+insert into Stay (reservation, startDate, endDate) values (15, '2019-11-26', '2019-12-02');
+insert into Stay (reservation, startDate, endDate) values (16, '2018-12-14', '2018-12-18');
 
 -- Guest
 
