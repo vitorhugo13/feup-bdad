@@ -23,7 +23,7 @@ CREATE TABLE Reservation (
     finalPrice      REAL    NOT NULL ON CONFLICT ABORT CHECK (finalPrice >= 0) DEFAULT(0), --DERIVED -> Trigger para efetuar o cálculo do preço
     isPaid          BOOLEAN DEFAULT FALSE,
     client          BIGINT  REFERENCES Client ON DELETE SET NULL,
-    complement      INT  REFERENCES Complement ON DELETE SET NULL
+    complement      INT  REFERENCES Complement NOT NULL ON CONFLICT ABORT
 );
 
 -- Cancelling
@@ -59,11 +59,12 @@ CREATE TABLE Stay (
 -- Guest
 DROP TABLE IF EXISTS Guest;
 
-CREATE TABLE Guest (
+CREATE TABLE Guest (    
+    guestID         BIGINT  NOT NULL ON CONFLICT ABORT,  --possível trigger: numero de guests permitido tem que ser menor que a capacidade dos quartos alocados à reserva - 1
     reservation     BIGINT  REFERENCES Reservation,
     name            TEXT    NOT NULL ON CONFLICT ABORT,
 
-    PRIMARY KEY (reservation, name);
+    PRIMARY KEY (guestID, reservation)
 );
 
 -- Comment
@@ -91,7 +92,7 @@ CREATE TABLE Room (
 DROP TABLE IF EXISTS RoomStay;
 
 CREATE TABLE RoomStay (
-    stay    BIGINT  REFERENCES Stay,
+    stay    BIGINT  REFERENCES Stay ON DELETE CASCADE,
     room    INT     REFERENCES Room,
     PRIMARY KEY (stay, room)
 );
