@@ -147,6 +147,7 @@ CREATE TABLE Feature (
     featureName TEXT    NOT NULL ON CONFLICT ABORT
 );
 
+
 -- MeetingRoomFeature
 DROP TABLE IF EXISTS MeetingRoomFeature;
 
@@ -164,6 +165,7 @@ CREATE TABLE BedroomTypeFeature (
     featureID   BIGINT  REFERENCES Feature,
     PRIMARY KEY(typeName, featureID)
 );
+
 
 COMMIT TRANSACTION;
 PRAGMA foreign_keys = on;
