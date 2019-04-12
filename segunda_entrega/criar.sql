@@ -60,9 +60,10 @@ CREATE TABLE Stay (
 DROP TABLE IF EXISTS Guest;
 
 CREATE TABLE Guest (    
-    guestID         BIGINT  NOT NULL ON CONFLICT ABORT,  --possível trigger: numero de guests permitido tem que ser menor que a capacidade dos quartos alocados à reserva - 1
-    reservation     BIGINT  REFERENCES Reservation,
-    name            TEXT    NOT NULL ON CONFLICT ABORT,
+    guestID     BIGINT  NOT NULL ON CONFLICT ABORT,  --possível trigger: numero de guests permitido tem que ser menor que a capacidade dos quartos alocados à reserva - 1
+    stay        BIGINT  REFERENCES Stay,
+    firstName   TEXT    NOT NULL ON CONFLICT ABORT,
+    lastName    TEXT    NOT NULL ON CONFLICT ABORT
 
     PRIMARY KEY (guestID, reservation)
 );
@@ -93,7 +94,7 @@ DROP TABLE IF EXISTS RoomStay;
 
 CREATE TABLE RoomStay (
     stay    BIGINT  REFERENCES Stay ON DELETE CASCADE,
-    room    INT     REFERENCES Room,
+    room    TEXT     REFERENCES Room,
     PRIMARY KEY (stay, room)
 );
 

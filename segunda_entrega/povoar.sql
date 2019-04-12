@@ -28,22 +28,22 @@ insert into Cancelling (reservation, client, cancelDate, cost) values (9, 9, '20
 insert into Cancelling (reservation, client, cancelDate, cost) values (14, 20 , '2018-07-29', '13,99');
 
 -- Reservation
-insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (1, '2018-03-12', '3966,61', 0, 8, 4);
-insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (2, '2018-05-06', '1478,51', 0, 2, 4);
-insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (3, '2018-11-03', '2484,23', 0, 4, 4);
-insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (4, '2018-11-01', '4753,09', 0, 3, 1);
-insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (5, '2019-01-26', '2899,02', 0, 5, 4);
+insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (1, '2018-03-12', '396,61', 0, 8, 4);
+insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (2, '2018-05-06', '147,51', 0, 2, 4);
+insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (3, '2018-11-03', '248,23', 0, 4, 4);
+insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (4, '2018-11-01', '475,09', 0, 3, 1);
+insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (5, '2019-01-26', '289,02', 0, 5, 4);
 insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (6, '2018-08-05', '207,83', 1, 6, 1);
 insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (7, '2018-11-24', '436,95', 1, 7, 1);
-insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (8, '2018-06-06', '4126,18', 0, 1, 3);
-insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (9, '2018-03-21', '2724,09', 0, 9, 2);
+insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (8, '2018-06-06', '412,18', 0, 1, 3);
+insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (9, '2018-03-21', '272,09', 0, 9, 2);
 insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (10,'2018-03-22', '985,20', 1, 10, 2);
 insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (11,'2018-09-24', '710,91', 0, 11, 3);
 insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (12,'2018-12-21', '807,43', 0, 12, 3);
-insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (13,'2019-01-13', '4122,03', 1, 13, 4);
+insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (13,'2019-01-13', '412,03', 1, 13, 4);
 insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (14,'2018-06-29', '306,08', 0, 20, 1);
-insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (15,'2019-02-18', '1405,67', 1, 15, 3);
-insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (16,'2018-12-08', '2928,73', 1, 19, 2);
+insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (15,'2019-02-18', '140,67', 1, 15, 3);
+insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (16,'2018-12-08', '292,73', 1, 19, 2);
 
 -- Cancelling
 insert into Cancelling (reservation, client, cancelDate, cost) values (4, 3, '2018-12-24', '23,56');
@@ -66,15 +66,52 @@ insert into Stay (reservation, startDate, endDate) values (6, '2018-09-04', '201
 insert into Stay (reservation, startDate, endDate) values (7, '2018-12-19', '2019-02-02');
 insert into Stay (reservation, startDate, endDate) values (8, '2018-06-19', '2018-07-02');
 
-insert into Stay (reservation, startDate, endDate) values (10, '2019-03-23', '2018-04-13');
+insert into Stay (reservation, startDate, endDate) values (10, '2019-08-23', '2019-08-30');
 insert into Stay (reservation, startDate, endDate) values (11, '2018-10-05', '2018-10-15');
-insert into Stay (reservation, startDate, endDate) values (12, '2019-02-22', '2019-02-28');
-insert into Stay (reservation, startDate, endDate) values (13, '2019-04-07', '2019-04-18');
+insert into Stay (reservation, startDate, endDate) values (12, '2019-07-22', '2019-07-28');
+insert into Stay (reservation, startDate, endDate) values (13, '2019-05-07', '2019-05-18');
 
 insert into Stay (reservation, startDate, endDate) values (15, '2019-11-26', '2019-12-02');
-insert into Stay (reservation, startDate, endDate) values (16, '2018-12-14', '2018-12-18');
+insert into Stay (reservation, startDate, endDate) values (16, '2019-12-14', '2019-12-18');
+
+-- RoomStay
+insert into RoomStay (stay, room) values (1, '206');
+insert into RoomStay (stay, room) values (1, '207');
+insert into RoomStay (stay, room) values (2, '303');
+insert into RoomStay (stay, room) values (3, '102');
+insert into RoomStay (stay, room) values (3, '103');
+
+insert into RoomStay (stay, room) values (5, '401');
+insert into RoomStay (stay, room) values (6, '305');
+insert into RoomStay (stay, room) values (7, '302');
+insert into RoomStay (stay, room) values (8, '307');
+
+insert into RoomStay (stay, room) values (11, '205');
+insert into RoomStay (stay, room) values (12, '105');
 
 -- Guest
+insert into Guest (guestID, stay, first_name, last_name) values (1, 1, 'Mina', 'Maxwell');
+insert into Guest (guestID, stay, first_name, last_name) values (2, 1, 'Oliviero', 'Comer');
+insert into Guest (guestID, stay, first_name, last_name) values (3, 1, 'Faunie', 'Fetherstan');
+insert into Guest (guestID, stay, first_name, last_name) values (4, 1, 'Chery', 'Doucette');
+
+insert into Guest (guestID, stay, first_name, last_name) values (1, 2, 'Dag', 'Enoksson');
+
+insert into Guest (guestID, stay, first_name, last_name) values (1, 3, 'Dag', 'Enoksson');
+insert into Guest (guestID, stay, first_name, last_name) values (2, 3, 'Maria', 'Enoksson');
+insert into Guest (guestID, stay, first_name, last_name) values (3, 3, 'Nick', 'Enoksson');
+insert into Guest (guestID, stay, first_name, last_name) values (4, 3, 'Olsen', 'Enoksson');
+insert into Guest (guestID, stay, first_name, last_name) values (5, 3, 'Baylah', 'Enoksson');
+insert into Guest (guestID, stay, first_name, last_name) values (6, 3, 'Joe', 'Mark');
+insert into Guest (guestID, stay, first_name, last_name) values (7, 3, 'Jane', 'Mark');
+insert into Guest (guestID, stay, first_name, last_name) values (8, 3, 'Oliver', 'Mark');
+insert into Guest (guestID, stay, first_name, last_name) values (9, 3, 'Doug', 'Mark');
+insert into Guest (guestID, stay, first_name, last_name) values (10, 3, 'Moist', 'Mark');
+
+insert into Guest (guestID, stay, first_name, last_name) values (1, 5, 'Dennis', 'Sal');
+
+insert into Guest (guestID, stay, first_name, last_name) values (1, 6, 'Dennis', 'Faneckja');
+
 
 -- Comment
 insert into Comment (Reservation, date, text, rating) values (1, '2018-09-07', 'Trully one of the best experiences we have had has a family! Recommended!', 5);
