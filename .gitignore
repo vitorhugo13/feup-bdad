@@ -1,0 +1,5 @@
+# ignore .vscode and .vs hidden files
+.vscode
+.vs
+
+
