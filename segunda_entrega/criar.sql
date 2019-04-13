@@ -56,16 +56,16 @@ CREATE TABLE Stay (
     CHECK (endDate > startDate)
 );
 
--- Guest
+-- Guest                /*   Names given at the arrival   */
 DROP TABLE IF EXISTS Guest;
 
 CREATE TABLE Guest (    
     guestID     BIGINT  NOT NULL ON CONFLICT ABORT,  --possível trigger: numero de guests permitido tem que ser menor que a capacidade dos quartos alocados à reserva - 1
     stay        BIGINT  REFERENCES Stay,
     firstName   TEXT    NOT NULL ON CONFLICT ABORT,
-    lastName    TEXT    NOT NULL ON CONFLICT ABORT
+    lastName    TEXT    NOT NULL ON CONFLICT ABORT,
 
-    PRIMARY KEY (guestID, reservation)
+    PRIMARY KEY (guestID, stay)
 );
 
 -- Comment
@@ -102,7 +102,7 @@ CREATE TABLE RoomStay (
 DROP TABLE IF EXISTS MeetingRoom;
 
 CREATE TABLE MeetingRoom (
-    roomNumber  INT PRIMARY KEY REFERENCES Room,
+    roomNumber  TEXT    PRIMARY KEY REFERENCES Room,
     description TEXT    NOT NULL ON CONFLICT ABORT
 );
 
@@ -110,16 +110,17 @@ CREATE TABLE MeetingRoom (
 DROP TABLE IF EXISTS Bedroom;
 
 CREATE TABLE Bedroom (
-    roomNumber  INT PRIMARY KEY REFERENCES Room,
-    bedroomType TEXT REFERENCES BedroomType
+    roomNumber      INT    PRIMARY KEY  REFERENCES Room,
+    bedroomTypeID   BIGINT REFERENCES BedroomType
 );
 
 -- BedroomType
 DROP TABLE IF EXISTS BedroomType;
 
 CREATE TABLE BedroomType (
-    typeName    TEXT PRIMARY KEY,
-    description TEXT    NOT NULL ON CONFLICT ABORT
+    bedroomTypeID   BIGINT PRIMARY KEY,
+    typeName        TEXT,
+    description     TEXT NOT NULL ON CONFLICT ABORT
 );
 
 -- Photo
@@ -130,8 +131,8 @@ CREATE TABLE Photo (
     date        DATE    NOT NULL ON CONFLICT ABORT,
     description TEXT    NOT NULL ON CONFLICT ABORT,
     photoPath   TEXT    NOT NULL ON CONFLICT ABORT,
-    meetingRoom INT     REFERENCES  MeetingRoom,
-    bedroom     INT     REFERENCES  Bedroom,
+    meetingRoom TEXT    REFERENCES  MeetingRoom,
+    bedroom     BIGINT  REFERENCES  BedroomType,
     client      BIGINT  REFERENCES  Client,   
 
     CHECK(meetingRoom=NULL AND bedroom=NULL AND Client<>NULL
@@ -154,7 +155,7 @@ CREATE TABLE Feature (
 DROP TABLE IF EXISTS MeetingRoomFeature;
 
 CREATE TABLE MeetingRoomFeature (
-    roomNumber  INT     REFERENCES MeetingRoom,
+    roomNumber  TEXT    REFERENCES MeetingRoom,
     featureID   BIGINT  REFERENCES Feature,
     PRIMARY KEY(roomNumber, featureID)
 );
@@ -163,9 +164,9 @@ CREATE TABLE MeetingRoomFeature (
 DROP TABLE IF EXISTS BedroomTypeFeature;
 
 CREATE TABLE BedroomTypeFeature (
-    typeName    TEXT    REFERENCES BedroomType,
-    featureID   BIGINT  REFERENCES Feature,
-    PRIMARY KEY(typeName, featureID)
+    bedroomTypeID   BIGINT  REFERENCES BedroomType,
+    featureID       BIGINT  REFERENCES Feature,
+    PRIMARY KEY(bedroomTypeID, featureID)
 );
 
 
