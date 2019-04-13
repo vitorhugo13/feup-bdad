@@ -72,10 +72,10 @@ CREATE TABLE Guest (
 DROP TABLE IF EXISTS Comment;
 
 CREATE TABLE Comment (
-    reservation     BIGINT  PRIMARY KEY REFERENCES reservation,
-    date            DATE    NOT NULL ON CONFLICT ABORT,
-    text            TEXT    NOT NULL ON CONFLICT ABORT,
-    rating          INT     NOT NULL ON CONFLICT ABORT,
+    stay    BIGINT  PRIMARY KEY REFERENCES Stay,
+    date    DATE    NOT NULL ON CONFLICT ABORT,
+    text    TEXT    NOT NULL ON CONFLICT ABORT,
+    rating  INT     NOT NULL ON CONFLICT ABORT,
 
     CHECK (rating >= 0 AND rating <= 5)
 );
