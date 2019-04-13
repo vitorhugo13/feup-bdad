@@ -118,9 +118,9 @@ CREATE TABLE Bedroom (
 DROP TABLE IF EXISTS BedroomType;
 
 CREATE TABLE BedroomType (
-    bedroomTypeID   BIGINT PRIMARY KEY,
-    typeName        TEXT,
-    description     TEXT NOT NULL ON CONFLICT ABORT
+    bedroomTypeID   BIGINT  PRIMARY KEY,
+    typeName        TEXT    UNIQUE,
+    description     TEXT    NOT NULL ON CONFLICT ABORT
 );
 
 -- Photo
