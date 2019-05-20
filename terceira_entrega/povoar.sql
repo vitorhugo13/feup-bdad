@@ -228,8 +228,8 @@ insert into Client (clientID, firstName, lastName, email, phoneNumber, password,
 -- Reservation
 insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (1, '2018-03-12', '1070,00', 0, 8, 4);
 insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (2, '2018-05-06', '910,00', 0, 2, 4);
-insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (3, '2018-11-03', '2070,00', 0, 4, 4);
-insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (4, '2018-11-01', '470,00', 0, 3, 1);
+insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (3, '2018-11-03', '2070,00', 0, 3, 4);
+insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (4, '2018-11-01', '470,00', 0, 4, 1);
 insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (5, '2019-01-26', '2550,00', 0, 5, 4);
 insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (6, '2018-08-05', '360,00', 1, 6, 1);
 insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (7, '2018-11-24', '300,00', 1, 7, 1);
@@ -289,8 +289,10 @@ insert into RoomStay (stay, room) values (16, '301');
 insert into Guest (guestID, stay, firstName, lastName) values (1, 1, 'Mina', 'Maxwell');
 insert into Guest (guestID, stay, firstName, lastName) values (2, 1, 'Oliviero', 'Comer');
 insert into Guest (guestID, stay, firstName, lastName) values (3, 1, 'Faunie', 'Fetherstan');
+insert into Guest (guestID, stay, firstName, lastName) values (4, 1, 'Tony', 'Fetherstan');
 
-insert into Guest (guestID, stay, firstName, lastName) values (1, 2, 'Dag', 'Enoksson');
+insert into Guest (guestID, stay, firstName, lastName) values (1, 2, 'Mame', 'Rochester');
+insert into Guest (guestID, stay, firstName, lastName) values (2, 2, 'Dag', 'Enoksson');
 
 insert into Guest (guestID, stay, firstName, lastName) values (1, 3, 'Tony', 'Enoksson');
 insert into Guest (guestID, stay, firstName, lastName) values (2, 3, 'Maria', 'Enoksson');
@@ -301,13 +303,18 @@ insert into Guest (guestID, stay, firstName, lastName) values (6, 3, 'Joe', 'Mar
 insert into Guest (guestID, stay, firstName, lastName) values (7, 3, 'Jane', 'Mark');
 insert into Guest (guestID, stay, firstName, lastName) values (8, 3, 'Oliver', 'Mark');
 insert into Guest (guestID, stay, firstName, lastName) values (9, 3, 'Doug', 'Mark');
+insert into Guest (guestID, stay, firstName, lastName) values (10, 3, 'Dag', 'Enoksson');
 
-insert into Guest (guestID, stay, firstName, lastName) values (1, 5, 'Mandy', 'Sal');
+insert into Guest (guestID, stay, firstName, lastName) values (1, 5, 'Dennis', 'Sall');
+insert into Guest (guestID, stay, firstName, lastName) values (2, 5, 'Mandy', 'Sall');
 
+insert into Guest (guestID, stay, firstName, lastName) values (1, 6, 'Fanechka', 'Aizikovitz');
 insert into Guest (guestID, stay, firstName, lastName) values (1, 6, 'Dijak', 'Aizikovitz');
 
+insert into Guest (guestID, stay, firstName, lastName) values (1, 7, 'Brent', 'Sterland');
 insert into Guest (guestID, stay, firstName, lastName) values (1, 7, 'Alicia', 'Thompson');
 
+insert into Guest (guestID, stay, firstName, lastName) values (1, 8, 'Hale', 'Gracey');
 insert into Guest (guestID, stay, firstName, lastName) values (1, 8, 'Thomas', 'MacAllister');
 
 -- Comment
