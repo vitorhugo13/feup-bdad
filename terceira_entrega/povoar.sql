@@ -309,13 +309,13 @@ insert into Guest (guestID, stay, firstName, lastName) values (1, 5, 'Dennis', '
 insert into Guest (guestID, stay, firstName, lastName) values (2, 5, 'Mandy', 'Sall');
 
 insert into Guest (guestID, stay, firstName, lastName) values (1, 6, 'Fanechka', 'Aizikovitz');
-insert into Guest (guestID, stay, firstName, lastName) values (1, 6, 'Dijak', 'Aizikovitz');
+insert into Guest (guestID, stay, firstName, lastName) values (2, 6, 'Dijak', 'Aizikovitz');
 
 insert into Guest (guestID, stay, firstName, lastName) values (1, 7, 'Brent', 'Sterland');
-insert into Guest (guestID, stay, firstName, lastName) values (1, 7, 'Alicia', 'Thompson');
+insert into Guest (guestID, stay, firstName, lastName) values (2, 7, 'Alicia', 'Thompson');
 
 insert into Guest (guestID, stay, firstName, lastName) values (1, 8, 'Hale', 'Gracey');
-insert into Guest (guestID, stay, firstName, lastName) values (1, 8, 'Thomas', 'MacAllister');
+insert into Guest (guestID, stay, firstName, lastName) values (2, 8, 'Thomas', 'MacAllister');
 
 -- Comment
 insert into Comment (Stay, date, text, rating) values (1, '2018-09-07', 'Trully one of the best experiences we have had has a family! Recommended!', 5);
