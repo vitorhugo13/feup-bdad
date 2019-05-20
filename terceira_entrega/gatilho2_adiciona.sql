@@ -1,1 +1,3 @@
-data_de_cancelamento;
+--data_de_cancelamento;
+
+CREATE TRIGGER CancelDate

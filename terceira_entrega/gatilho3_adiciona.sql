@@ -1,1 +1,3 @@
-verificar_nmr_guests;
+--verificar_nmr_guests;
+
+CREATE TRIGGER VerifyGuests

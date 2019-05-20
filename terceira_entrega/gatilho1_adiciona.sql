@@ -1,1 +1,3 @@
-calculo_do_preço;
+--calculo_do_preço;
+
+CREATE TRIGGER PriceCheck
