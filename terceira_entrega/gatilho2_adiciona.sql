@@ -2,4 +2,5 @@
 
 CREATE TRIGGER CancelDate
 ON 
-AFTER 
+AFTER --or before, instead
+FOR EACH ROW
