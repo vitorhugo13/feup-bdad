@@ -1,1 +1,1 @@
-DROP TRIGGER IF EXISTS nome_trigger;
+DROP TRIGGER IF EXISTS VerifyGuests;
