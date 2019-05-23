@@ -11,13 +11,12 @@ This repository contains the project completed in Bases de Dados, a **2nd year c
 
 ### Second Delivery
 
- * [Second Report](https://docs.google.com/document/d/12QI6yeYAEGx6i6vKfMbxFk_6U1X3NBmMS3kUi2Q_L10/edit)
+ * [Second Report](https://github.com/Marantesss/feup-bdad/blob/master/segunda_entrega/Relat%C3%B3rio_BDAD_2MIEIC03_04.pdf)
  * [Second UML Diagram](https://www.lucidchart.com/documents/edit/b1926192-92df-43f3-aa79-a8760bd7e2a3?shared=true&#)
 
 ### Third Delivery
 
- * [Third Report]()
- * [Third UML Diagram]()
+ * [Third Report](https://docs.google.com/document/d/12QI6yeYAEGx6i6vKfMbxFk_6U1X3NBmMS3kUi2Q_L10/edit)
 
 ## Course Information
 
