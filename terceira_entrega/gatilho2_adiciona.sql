@@ -10,5 +10,6 @@ AFTER INSERT ON CancelLing
 FOR EACH ROW
 BEGIN
         --CHECK (julianDay(cancelDate) < SELECT julianDay(startDate) FROM Stay Where Cancelling.reservationID = Stay.reservationID) 
-        
+        UPDATE CancelLing SET isALlowed =1 WHERE julianDay(cancelDate) < (SELECT julianDay(startDate) FROM Stay WHERE CancelLing.reservationID = Stay.reservationID);
+        DELETE FROM Stay WHERE CancelLing.reservationID = Stay.reservationID;
 END;
