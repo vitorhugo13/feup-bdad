@@ -1,10 +1,9 @@
 --data_de_cancelamento;
 
 CREATE TRIGGER CancelDate
-AFTER INSERT ON CancelLing
+BEFORE INSERT ON Cancelling
 FOR EACH ROW
-WHEN (julianDay(cancelDate) < (SELECT julianDay(startDate) FROM Stay WHERE Cancelling.reservation = Stay.reservation))
+WHEN (julianDay(Cancelling.cancelDate) < (SELECT julianDay(Stay.startDate) WHERE Cancelling.reservation = Stay.reservation))
 BEGIN
-        DELETE FROM Stay WHERE new.reservation = Stay.reservation;
-      
+        DELETE FROM Stay WHERE New.reservation = Stay.reservation;      
 END;
