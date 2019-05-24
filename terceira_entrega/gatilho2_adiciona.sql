@@ -12,6 +12,6 @@ WHEN (julianDay(cancelDate) < (SELECT julianDay(startDate) FROM Stay WHERE Cance
 BEGIN
          
         UPDATE Cancelling SET isALlowed = 1;
-        DELETE FROM Stay WHERE Cancelling.reservation = Stay.reservation;
+        DELETE FROM Stay WHERE new.reservation = Stay.reservation;
       
 END;

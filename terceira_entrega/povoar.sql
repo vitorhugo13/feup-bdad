@@ -244,9 +244,9 @@ insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client
 insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (16,'2018-12-08', '440,00', 1, 19, 2);
 
 -- Cancelling
-insert into Cancelling (reservation, client, cancelDate, cost,isAllowed) values (4, 3, '2018-12-24', '23,56',1);
-insert into Cancelling (reservation, client, cancelDate, cost, isAllowed) values (9, 9, '2018-03-27', '63,59',1);
-insert into Cancelling (reservation, client, cancelDate, cost, isAllowed) values (14, 20 , '2019-07-29', '13,99',1);
+insert into Cancelling (reservation, client, cancelDate, cost,isAllowed) values (4, 3, '2018-12-24', '23,56');
+insert into Cancelling (reservation, client, cancelDate, cost, isAllowed) values (9, 9, '2018-03-27', '63,59');
+insert into Cancelling (reservation, client, cancelDate, cost, isAllowed) values (14, 20 , '2019-07-29', '13,99');
 
 -- Stay
 insert into Stay (reservation, startDate, endDate) values (1, '2018-08-27', '2018-09-05');
