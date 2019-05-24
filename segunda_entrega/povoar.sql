@@ -242,6 +242,7 @@ insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client
 insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (14,'2018-06-29', '300,00', 0, 20, 1);
 insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (15,'2019-02-18', '480,00', 1, 15, 3);
 insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (16,'2018-12-08', '440,00', 1, 19, 2);
+insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (17,'2018-12-03', '230,00', 1, 14, 1);
 
 -- Cancelling
 insert into Cancelling (reservation, client, cancelDate, cost) values (4, 3, '2018-12-24', '23,56');
@@ -265,12 +266,13 @@ insert into Stay (reservation, startDate, endDate) values (13, '2019-05-07', '20
 
 insert into Stay (reservation, startDate, endDate) values (15, '2019-11-26', '2019-12-02');
 insert into Stay (reservation, startDate, endDate) values (16, '2019-12-14', '2019-12-18');
+insert into Stay (reservation, startDate, endDate) values (17, '2019-06-10', '2019-06-11');
 
 -- RoomStay
 insert into RoomStay (stay, room) values (1, '206');
 insert into RoomStay (stay, room) values (1, '207');
-insert into RoomStay (stay, room) values (2, '303');
-insert into RoomStay (stay, room) values (3, '102');
+insert into RoomStay (stay, room) values (2, '206');
+insert into RoomStay (stay, room) values (3, '206');
 insert into RoomStay (stay, room) values (3, '103');
 
 insert into RoomStay (stay, room) values (5, '401');
@@ -284,6 +286,7 @@ insert into RoomStay (stay, room) values (13, '213');
 
 insert into RoomStay (stay, room) values (15, '115');
 insert into RoomStay (stay, room) values (16, '301');
+insert into RoomStay (stay, room) values (17, '001');
 
 -- Guest
 insert into Guest (guestID, stay, firstName, lastName) values (1, 1, 'Mina', 'Maxwell');
@@ -313,10 +316,7 @@ insert into Guest (guestID, stay, firstName, lastName) values (1, 8, 'Thomas', '
 -- Comment
 insert into Comment (Reservation, date, text, rating) values (1, '2018-09-07', 'Trully one of the best experiences we have had has a family! Recommended!', 5);
 insert into Comment (Reservation, date, text, rating) values (2, '2018-07-01', 'Our room was not very clean, shower head was broken, not at all recommended!', 1);
-insert into Comment (Reservation, date, text, rating) values (3, '2019-01-06', 'Great restaurant with an awesome christmas dinner, great exeperience even that the pool was being renovated.', 4);
-
-
--- PHOTOS INSERTION
+insert into Comment (Reservation, date, text, rating) values (3, '2019-01-06', 'Great restaurant with an awesome christmas dinner, great exeperience even though the pool was being renovated.', 4);
 
 -- Photo
 insert into Photo (photoID, date, description, photoPath, meetingRoom, bedroom, client) values (1, '2018-05-11', 'Presidential suite view', 'pres_suite_view.gif', NULL, 10, NULL);
