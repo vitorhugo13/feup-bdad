@@ -34,7 +34,8 @@ CREATE TABLE Cancelling (
     reservation     BIGINT  PRIMARY KEY REFERENCES Reservation,
     client          BIGINT  REFERENCES  Client ON DELETE SET NULL,
     cancelDate      DATE    NOT NULL ON CONFLICT ABORT,  --CHECK (date <= (select startDate from Stay)) -> TRIGGER
-    cost            REAL    NOT NULL ON CONFLICT ABORT
+    cost            REAL    NOT NULL ON CONFLICT ABORT,
+    isAllowed       BOOLEAN DEFAULT FALSE --added this attribute to use in trigger2
 );
 
 -- Complement

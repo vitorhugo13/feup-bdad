@@ -226,7 +226,7 @@ insert into Client (clientID, firstName, lastName, email, phoneNumber, password,
 insert into Client (clientID, firstName, lastName, email, phoneNumber, password, taxNumber) values (20, 'Fairlie', 'Pellingar', 'fpellingarj@1688.com', '+62 834 571 3993', 'RhQmda7YeCOI', '634-02-9324');
 
 -- Reservation
-insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (1, '2018-03-12', '1070,00', 0, 8, 4);
+insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (1, '2018-03-12', '00,00', 0, 8, 4);
 insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (2, '2018-05-06', '910,00', 0, 2, 4);
 insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (3, '2018-11-03', '2070,00', 0, 3, 4);
 insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (4, '2018-11-01', '470,00', 0, 4, 1);
@@ -244,9 +244,9 @@ insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client
 insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (16,'2018-12-08', '440,00', 1, 19, 2);
 
 -- Cancelling
-insert into Cancelling (reservation, client, cancelDate, cost) values (4, 3, '2018-12-24', '23,56');
-insert into Cancelling (reservation, client, cancelDate, cost) values (9, 9, '2018-03-27', '63,59');
-insert into Cancelling (reservation, client, cancelDate, cost) values (14, 20 , '2018-07-29', '13,99');
+insert into Cancelling (reservation, client, cancelDate, cost,isAllowed) values (4, 3, '2018-12-24', '23,56',1);
+insert into Cancelling (reservation, client, cancelDate, cost, isAllowed) values (9, 9, '2018-03-27', '63,59',1);
+insert into Cancelling (reservation, client, cancelDate, cost, isAllowed) values (14, 20 , '2019-07-29', '13,99',1);
 
 -- Stay
 insert into Stay (reservation, startDate, endDate) values (1, '2018-08-27', '2018-09-05');

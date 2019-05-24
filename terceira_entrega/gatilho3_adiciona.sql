@@ -1,7 +1,7 @@
---verificar_nmr_guests;
+--verificar_num_guests;
 
 CREATE TRIGGER VerifyGuests
 ON 
-AFTER --or before, instead
+AFTER 
 FOR EACH ROW
 
