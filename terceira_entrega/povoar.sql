@@ -242,6 +242,11 @@ insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client
 insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (14,'2018-06-29', '300,00', 0, 20, 1);
 insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (15,'2019-02-18', '480,00', 1, 15, 3);
 insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (16,'2018-12-08', '440,00', 1, 19, 2);
+insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (17,'2018-12-03', '230,00', 1, 14, 1);
+insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (18,'2019-08-03', '230,00', 1, 8, 1);
+insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (19,'2019-05-03', '230,00', 1, 8, 1);
+insert into Reservation (reservationID, creationDate, finalPrice, isPaid, client, complement) values (20,'2019-03-03', '230,00', 1, 3, 3);
+
 
 -- Cancelling
 insert into Cancelling (reservation, client, cancelDate, cost) values (4, 3, '2018-12-24', '23,56');
@@ -265,12 +270,16 @@ insert into Stay (reservation, startDate, endDate) values (13, '2019-05-07', '20
 
 insert into Stay (reservation, startDate, endDate) values (15, '2019-11-26', '2019-12-02');
 insert into Stay (reservation, startDate, endDate) values (16, '2019-12-14', '2019-12-18');
+insert into Stay (reservation, startDate, endDate) values (17, '2019-06-10', '2019-06-11');
+insert into Stay (reservation, startDate, endDate) values (18, '2019-08-10', '2019-08-11');
+insert into Stay (reservation, startDate, endDate) values (19, '2019-10-10', '2019-10-11');
+insert into Stay (reservation, startDate, endDate) values (20, '2019-08-10', '2019-08-15');
 
 -- RoomStay
 insert into RoomStay (stay, room) values (1, '206');
 insert into RoomStay (stay, room) values (1, '207');
-insert into RoomStay (stay, room) values (2, '303');
-insert into RoomStay (stay, room) values (3, '102');
+insert into RoomStay (stay, room) values (2, '206');
+insert into RoomStay (stay, room) values (3, '206');
 insert into RoomStay (stay, room) values (3, '103');
 
 insert into RoomStay (stay, room) values (5, '401');
@@ -284,6 +293,10 @@ insert into RoomStay (stay, room) values (13, '213');
 
 insert into RoomStay (stay, room) values (15, '115');
 insert into RoomStay (stay, room) values (16, '301');
+insert into RoomStay (stay, room) values (17, '001');
+insert into RoomStay (stay, room) values (18, '002');
+insert into RoomStay (stay, room) values (19, '206');
+insert into RoomStay (stay, room) values (20, '303');
 
 -- Guest
 insert into Guest (guestID, stay, firstName, lastName) values (1, 1, 'Mina', 'Maxwell');
@@ -336,3 +349,4 @@ insert into Photo (photoID, date, description, photoPath, meetingRoom, bedroom, 
 insert into Photo (photoID, date, description, photoPath, meetingRoom, bedroom, client) values (8, '2018-11-19', 'Audio Small Meeting Room', 'audio_smallmr.jpeg', '004', NULL, NULL);
 insert into Photo (photoID, date, description, photoPath, meetingRoom, bedroom, client) values (9, '2018-09-01', 'Audio&Video Medium Meeting Room', 'audiovideo_mediummr.jpeg', '002', NULL, NULL);
 insert into Photo (photoID, date, description, photoPath, meetingRoom, bedroom, client) values (10, '2018-11-25', 'Client w/id 10 photo', 'tades_kidstoun.jpeg', NULL, NULL, 10);
+insert into Photo (photoID, date, description, photoPath, meetingRoom, bedroom, client) values (11, '2018-05-13', 'Presidential suite pool', 'pres_suite_pool.png', NULL, 10, NULL);
