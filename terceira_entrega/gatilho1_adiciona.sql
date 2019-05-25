@@ -1,7 +1,7 @@
 --calculo_do_preço;
 
 CREATE TRIGGER PriceCheck
-AFTER INSERT ON Stay
+AFTER INSERT ON RoomStay
 FOR EACH ROW
 BEGIN
     UPDATE Reservation
@@ -15,3 +15,20 @@ BEGIN
         * SELECT DATEDIFF(day, startDate FROM Stay Where reservation = Old.reservation, endDate FROM Stay Where reservation = Old.reservation)
     WHERE Reservation.reservationID = Old.reservationID
 END;
+
+/*  PREÇO BASE
+
+select reservationID, sum(price) 
+from Reservation natural join Stay natural join RoomStay natural join Room 
+where Reservation.reservationID = Stay.reservation 
+and Stay.reservation = RoomStay.stay 
+and RoomStay.room = Room.roomNumber 
+and Reservation.reservationID = New.reservationID;
+
+    EXTRA
+
+select reservationID, sum(extraCost), guestID 
+from Reservation natural join Complement natural join Guest 
+where Reservation.reservationID = 1 
+and Reservation.complement = Complement.complementID 
+and Reservation.reservationID = Guest.stay;
