@@ -1,4 +1,4 @@
---calculo_do_preço;
+ --calculo_do_preço;
 
 CREATE TRIGGER PriceCheck
 AFTER INSERT ON RoomStay
@@ -23,7 +23,7 @@ from Reservation natural join Stay natural join RoomStay natural join Room
 where Reservation.reservationID = Stay.reservation 
 and Stay.reservation = RoomStay.stay 
 and RoomStay.room = Room.roomNumber 
-and Reservation.reservationID = New.reservationID;
+and Reservation.reservationID = 1;
 
     EXTRA
 
@@ -32,3 +32,26 @@ from Reservation natural join Complement natural join Guest
 where Reservation.reservationID = 1 
 and Reservation.complement = Complement.complementID 
 and Reservation.reservationID = Guest.stay;
+
+*/
+
+/*
+
+soma o valor do preço base com o valor extra!!
+
+
+select ((select  sum(price) 
+from Reservation natural join Stay natural join RoomStay natural join Room 
+where Reservation.reservationID = Stay.reservation 
+and Stay.reservation = RoomStay.stay 
+and RoomStay.room = Room.roomNumber 
+and Reservation.reservationID = 1
+)
++
+(
+select  sum(extraCost)
+from Reservation natural join Complement natural join Guest 
+where Reservation.reservationID = 1 
+and Reservation.complement = Complement.complementID 
+and Reservation.reservationID = Guest.stay));
+*/
