@@ -94,7 +94,7 @@ CREATE TABLE Room (
 DROP TABLE IF EXISTS RoomStay;
 
 CREATE TABLE RoomStay (
-    stay    BIGINT  REFERENCES Stay ON DELETE CASCADE,
+    stay    BIGINT  REFERENCES Stay,
     room    TEXT     REFERENCES Room,
     PRIMARY KEY (stay, room)
 );
