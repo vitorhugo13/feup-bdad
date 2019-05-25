@@ -12,28 +12,9 @@ BEGIN
         + (SELECT extraCost FROM Complement
         WHERE complementID = (SELECT complement FROM Reservation WHERE reservationID = Old.reservationID))
         )
-        * SELECT DATEDIFF(day, startDate FROM Stay Where reservation = Old.reservation, endDate FROM Stay Where reservation = Old.reservation)
-    WHERE Reservation.reservationID = Old.reservationID
+        * SELECT DATEDIFF(day, startDate FROM Stay Where reservation = Old.reservation, endDate FROM Stay Where reservation = New.reservation)
+    WHERE Reservation.reservationID = New.reservationID
 END;
-
-/*  PREÇO BASE
-
-select reservationID, sum(price) 
-from Reservation natural join Stay natural join RoomStay natural join Room 
-where Reservation.reservationID = Stay.reservation 
-and Stay.reservation = RoomStay.stay 
-and RoomStay.room = Room.roomNumber 
-and Reservation.reservationID = 1;
-
-    EXTRA
-
-select reservationID, sum(extraCost), guestID 
-from Reservation natural join Complement natural join Guest 
-where Reservation.reservationID = 1 
-and Reservation.complement = Complement.complementID 
-and Reservation.reservationID = Guest.stay;
-
-*/
 
 /*
 
