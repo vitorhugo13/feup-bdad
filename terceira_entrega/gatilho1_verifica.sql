@@ -13,4 +13,4 @@ insert into RoomStay values (21,'206');
 select "Ola";
 select * from RoomStay;
 
-select finalPrice from Reservation WHERE reservationID = 1;
+select finalPrice from Reservation WHERE reservationID = 21;
