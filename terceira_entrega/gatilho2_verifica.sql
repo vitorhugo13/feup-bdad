@@ -5,8 +5,8 @@
 SELECT * FROM Cancelling;
 SELECT * FROM Stay;
 
-INSERT INTO Cancelling (reservation, client, cancelDate, cost) values (15, 20 , '2019-11-20', '13,99');
-INSERT INTO Cancelling (reservation, client, cancelDate, cost) values (16, 20 , '2019-12-20', '13,99');
+INSERT INTO Cancelling values (10, 10, '2019-08-20', '15');
+INSERT INTO Cancelling values (16, 19, '2019-12-16', '15');
 
 SELECT * FROM Cancelling;
 SELECT * FROM Stay;
