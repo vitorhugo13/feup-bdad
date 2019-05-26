@@ -20,7 +20,7 @@ DROP TABLE IF EXISTS Reservation;
 CREATE TABLE Reservation (
     reservationID   BIGINT  PRIMARY KEY,
     creationDate    DATE    NOT NULL ON CONFLICT ABORT,
-    finalPrice      REAL    NOT NULL ON CONFLICT ABORT CHECK (finalPrice >= 0) DEFAULT(0), --DERIVED -> Trigger para efetuar o cálculo do preço
+    finalPrice      REAL    CHECK (finalPrice >= 0), --DERIVED -> Trigger para efetuar o cálculo do preço
     isPaid          BOOLEAN DEFAULT FALSE,
     client          BIGINT  REFERENCES Client ON DELETE SET NULL,
     complement      INT  REFERENCES Complement DEFAULT 1
@@ -32,7 +32,7 @@ DROP TABLE IF EXISTS Cancelling;
 /*Possível trigger*/
 CREATE TABLE Cancelling (
     reservation     BIGINT  PRIMARY KEY REFERENCES Reservation,
-    client          BIGINT  REFERENCES  Client ON DELETE SET NULL,
+    client          BIGINT  REFERENCES Client ON DELETE SET NULL,
     cancelDate      DATE    NOT NULL ON CONFLICT ABORT,  --CHECK (date <= (select startDate from Stay)) -> TRIGGER
     cost            REAL    NOT NULL ON CONFLICT ABORT
 );

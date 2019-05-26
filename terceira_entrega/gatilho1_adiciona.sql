@@ -2,32 +2,30 @@
 
 CREATE TRIGGER PriceCheck
 AFTER INSERT ON RoomStay
-WHEN Reservation.reservationID = New.stay
 BEGIN
     UPDATE Reservation
     SET finalPrice = (
         select (
-        select ((select  sum(price) 
-        from Reservation natural join Stay natural join RoomStay natural join Room 
-        where Reservation.reservationID = Stay.reservation 
-        and Stay.reservation = RoomStay.stay 
-        and RoomStay.room = Room.roomNumber 
-        and Reservation.reservationID= New.reservationID
+        select ((select sum(price) 
+        from Stay natural join RoomStay natural join Room 
+        where reservation = stay 
+        and room = roomNumber 
+        and reservation = 10
         ) + (
-        select  sum(extraCost)
+        select sum(extraCost)
         from Reservation natural join Complement natural join Guest 
-        where Reservation.reservationID = New.reservationID
-        and Reservation.complement = Complement.complementID 
-        and Reservation.reservationID = Guest.stay)) *
-        (select((select julianday(endDate) 
+        where reservationID = 10
+        and complement = Complement.complementID 
+        and reservationID = Guest.stay
+        )) * (
+        select((select julianday(endDate) 
         from Stay natural join Reservation 
-        where Reservation.reservationID = Stay.reservation 
-        and Reservation.reservationID = New.reservationID) 
-        -
-        (select julianday(startDate) 
+        where reservationID = Stay.reservation 
+        and reservationID = 10
+        ) - (
+        select julianday(startDate) 
         from Stay natural join Reservation 
-        where Reservation.reservationID = Stay.reservation 
-        and Reservation.reservationID = New.reservationID)))));
-
+        where reservationID = Stay.reservation 
+        and Stay.reservation = 10)))))
+    where reservationID = 10;
 END;
-
