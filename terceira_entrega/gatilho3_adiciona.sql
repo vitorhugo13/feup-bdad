@@ -14,18 +14,3 @@ WHEN ((select count(stay)
 BEGIN
     DELETE FROM Guest WHERE guestID = New.guestID and stay = New.stay;
 END;
-
-/*
-SELECIONA Nº DE GUESTS QUE EXISTEM
-select * from RoomStay natual join Room natural join Guest 
-where Room.roomNumber = room
-*/
-
-
-/*
---nº de guests associados a uma reserva
-select stay, count(stay) from (select stay, guestID, firstName, 
-lastName from RoomStay natual join Room natural join Guest 
-where Room.roomNumber = room group by stay,firstName, lastName)
-where stay = 1;
-*/
