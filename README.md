@@ -25,7 +25,7 @@ All the course's information can be viewed [here](https://sigarra.up.pt/feup/pt/
 ## Authors
 
 * **Gonçalo Marantes** - [Marantesss](https://github.com/Marantesss)
-* **Vítor Gonçalves** - [Vítor Gonçalves](https://github.com/torrinheira)
+* **Vítor Gonçalves** - [Vítor Gonçalves](https://github.com/vitorhugo13)
 * **Miguel Simões** - [MiguelSimoes35](https://github.com/MiguelSimoes35)
 
 ## License
